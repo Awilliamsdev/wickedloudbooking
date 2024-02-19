@@ -157,3 +157,46 @@ animation-duration: 1.5s;
 from {opacity: .4}
 to {opacity: 1}
 }
+
+/* Mobile View Styling */
+/* Hamburger Menu Icon */
+.hamburger-menu {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px; /* Space between lines */
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+}
+
+/* Nav List */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger-menu {
+      display: flex; /* Show hamburger on mobile */
+  }
+
+  .nav-list {
+      display: none; /* Hide nav list on mobile */
+      flex-direction: column; /* Stack items vertically */
+  }
+
+  .nav-list.active {
+      display: flex; /* Show nav list when active */
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

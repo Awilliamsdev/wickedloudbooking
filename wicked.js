@@ -11,6 +11,17 @@ function currentSlide(n) {
     showSlides(n - 1);
 }
 
+// HAMBURGER nav bar
+document.addEventListener("DOMContentLoaded", function() {
+  const hamburger = document.querySelector('.hamburger-menu');
+  const navList = document.querySelector('.nav-list');
+
+  hamburger.addEventListener('click', function() {
+      navList.classList.toggle('active');
+  });
+});
+
+
   
 
 function showSlides(n) {
