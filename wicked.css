@@ -530,6 +530,15 @@ to {opacity: 1}
     .map-event {
       max-width: 80%;
     }
+    .event-paragraph {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+    .event-details-container,
+  .event-flyer,
+  .map-event iframe {
+    width: 100%; /* Set a width of 100% for mobile */
+  }
 }
 
 .flex-event {
