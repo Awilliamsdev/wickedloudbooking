@@ -496,7 +496,7 @@ to {opacity: 1}
 }
 
 /* You may want to add additional responsive CSS to handle how these items stack or scale on smaller screens */
-@media (max-width: 800px) {
+@media (max-width: 780px) {
     .hamburger-menu {
         display: flex; /* Show hamburger on mobile */
     }
@@ -523,6 +523,12 @@ to {opacity: 1}
       display: flex;
       flex-direction: column !important;
     }
+    .event-details-container {
+      max-width: -moz-available;
+    }
+  .map-event {
+    max-width: 100%;
+  }
 }
 
 .flex-event {
