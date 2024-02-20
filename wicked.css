@@ -41,12 +41,7 @@ body {
   text-decoration: none;
   color: purple;
 }
-.main-content {
-  text-align: center;
-  padding: 4rem 1rem;
-  background: #000;
-  color: #fff;
-}
+
 .title {
   font-size: 3rem;
   margin-bottom: 0.5rem;
@@ -242,33 +237,12 @@ to {opacity: 1}
 }
 
 
-/* Responsive */
-@media (max-width: 768px) {
-  .hamburger-menu {
-      display: flex; /* Show hamburger on mobile */
-  }
-
-  .nav-list {
-      display: none; /* Hide nav list on mobile */
-      flex-direction: column; /* Stack items vertically */
-  }
-
-  .nav-list.active {
-      display: flex; /* Show nav list when active */
-  }
-}
 
 img {
   max-width: 100%;
   height: auto;
 }
 
-.main-content {
-  width: 100%;
-  max-width: 100%; /* Adjust to your preference */
-  margin: auto;
-  text-align: center;
-}
 
 /*  events side upcoming */
 
@@ -380,6 +354,10 @@ td a {
   padding: 4rem 1rem;
   background: #000;
   color: #fff;
+  width: 100%;
+  max-width: 100%; /* Adjust to your preference */
+  margin: auto;
+  padding: 4rem 1rem;
 }
 .title {
   font-size: 3rem;
@@ -487,13 +465,6 @@ from {opacity: .4}
 to {opacity: 1}
 }
 
-.main-content {
-    width: 100%;
-    max-width: 100%; /* Adjust to your preference */
-    margin: auto;
-    text-align: center;
-}
-
 .title {
     margin-bottom: 20px;
     font-size: 2rem; /* Adjust to your preference */
@@ -525,13 +496,32 @@ to {opacity: 1}
 }
 
 /* You may want to add additional responsive CSS to handle how these items stack or scale on smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+    .hamburger-menu {
+        display: flex; /* Show hamburger on mobile */
+    }
+
+    .nav-list {
+        display: none; /* Hide nav list on mobile */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .nav-list.active {
+        display: flex; /* Show nav list when active */
+    }
     .flex-container {
         flex-direction: column;
     }
+    .flex-event {
+      flex-direction: column !important;
+  }
     .event-schedule, .calendar-container {
         flex: none; /* On smaller screens, they will take the full width */
         min-width: 100%;
+    }
+    .main-content {
+      display: flex;
+      flex-direction: column !important;
     }
 }
 
@@ -544,8 +534,6 @@ to {opacity: 1}
 
 .event-flyer {
   flex: 1;
-  display: flex;
-  flex-direction: column;
   justify-content: left;
   gap: 2em;
 }
