@@ -527,7 +527,9 @@ to {opacity: 1}
     .event-details-container {
       max-width: -moz-available;
     }
-  
+    .map-event {
+      max-width: 80%;
+    }
 }
 
 .flex-event {
@@ -576,7 +578,6 @@ to {opacity: 1}
   flex-direction: row;
   gap: 5%;
   padding-top: 1em;
-  max-width: inherit;
 }
 
 /* event button */
