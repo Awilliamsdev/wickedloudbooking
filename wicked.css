@@ -520,15 +520,14 @@ to {opacity: 1}
         min-width: 100%;
     }
     .main-content {
+      width: 100%;
       display: flex;
       flex-direction: column !important;
     }
     .event-details-container {
       max-width: -moz-available;
     }
-    .map-event {
-      max-width: 100%;
-    }
+  
 }
 
 .flex-event {
@@ -577,6 +576,7 @@ to {opacity: 1}
   flex-direction: row;
   gap: 5%;
   padding-top: 1em;
+  max-width: inherit;
 }
 
 /* event button */
