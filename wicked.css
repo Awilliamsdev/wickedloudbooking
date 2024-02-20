@@ -64,6 +64,11 @@ footer {
   text-align: center;
   padding: 1rem;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold; 
+  letter-spacing:0.05em;
+  font-style: normal;
   
 }
 
@@ -71,7 +76,6 @@ footer a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: bold; 
-  text-transform:uppercase; 
   letter-spacing:0.05em;
   font-style: normal;
   text-decoration: none;
@@ -84,12 +88,17 @@ footer a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-bottom: 1em;
 }
 
 .footer-column1, .footer-column2, .footer-column3 {
   display: flex;
   flex-direction: column;
-  color: #ffff;
+  color: #c6c6c6;
+}
+
+footer h3 {
+  color: white;
 }
 
 
@@ -351,13 +360,12 @@ td a {
 }
 .main-content {
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
   background: #000;
   color: #fff;
   width: 100%;
   max-width: 100%; /* Adjust to your preference */
   margin: auto;
-  padding: 4rem 1rem;
 }
 .title {
   font-size: 3rem;
@@ -545,15 +553,18 @@ to {opacity: 1}
   display: flex;
   flex-direction: row;
   gap: 5%;
-  align-items: center;
+  align-items: stretch;
+}
+.event-flyer, .event-details {
+  flex: 1;
 }
 
 .event-flyer {
-  flex: 1;
   justify-content: left;
   gap: 2em;
 }
 .event-paragraph {
+  padding-top: 0%;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
