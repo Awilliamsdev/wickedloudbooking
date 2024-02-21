@@ -252,6 +252,40 @@ img {
   height: auto;
 }
 
+.event-day {
+  padding: 15px 0; /* Larger padding to increase size */
+  background-color: #f0f0f0; /* Light background to highlight event days */
+  border: 1px solid #cccccc; /* Optional: add a border */
+  position: relative;
+  font-weight: bold; /* Make the text bold */
+}
+
+.calendar-days div {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.calendar-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.calendar-days div:hover {
+  transform: scale(1.1); /* Scale up divs on hover */
+}
+
+.empty {
+  visibility: hidden;
+}
+
+.calendar-container img {
+height: 100% !important;
+padding: .5em;
+}
+
 
 /*  events side upcoming */
 
@@ -492,6 +526,20 @@ to {opacity: 1}
     max-width: fit-content; /* Adjust minimum width as needed */
 }
 
+  .calendar-cell {
+    border: 1px solid #ccc;
+    min-width: 100px; /* Set a minimum width for the cell */
+    min-height: 100px; /* Set a minimum height for the cell */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden; /* Hide overflow content */
+}
+
+
 .calendar-container {
     flex: 3; /* The .calendar-container will take up 3 parts of the space */
     min-width: 60%; /* Adjust minimum width as needed */
@@ -562,6 +610,10 @@ to {opacity: 1}
 .event-flyer {
   justify-content: left;
   gap: 2em;
+}
+
+.days-of-week {
+  background-color: #c797eb;
 }
 .event-paragraph {
   padding-top: 0%;
@@ -684,4 +736,4 @@ to {opacity: 1}
 }
 .btn-1 span:hover:after {
   width: 100%;
-}
+} 
