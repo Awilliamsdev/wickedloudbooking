@@ -246,6 +246,11 @@ to {opacity: 1}
 }
 
 
+#prevMonth, #nextMonth {  
+  background-color: black ;
+  color: white ;
+
+}
 
 img {
   max-width: 100%;
@@ -348,6 +353,10 @@ td a {
 
 .flexeventspage {
   display: flex;
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: -webkit-flex; 
+  display: flex; 
   flex: 1 3;
   justify-content: center;
   align-items: flex-start; /* Adjust if you want to align them differently */
@@ -522,8 +531,11 @@ to {opacity: 1}
 }
 
 .event-schedule {
-    flex: 1; /* The .event-schedule will take up 1 part of the space */
-    max-width: fit-content; /* Adjust minimum width as needed */
+  -ms-flex: 1; /* IE 10 */
+  -webkit-box-flex: 1; /* Safari, iOS, Android browser */
+  -webkit-flex: 1; /* Chrome, Safari, Opera */
+  flex: 1; /* Standard syntax */
+  max-width: fit-content;
 }
 
   .calendar-cell {
@@ -549,6 +561,10 @@ to {opacity: 1}
 .event-schedule img, .calendar-container img {
     max-width: 100%;
     height: auto;
+}
+
+.calendar-container img {
+  width: auto !important;
 }
 
 /* You may want to add additional responsive CSS to handle how these items stack or scale on smaller screens */
